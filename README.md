@@ -1,4 +1,4 @@
-#Shopware Shortcuts
+# Shopware Shortcuts
 
 this is a plugin for shopware 5.2 or newer which adds new shortcuts for the backend
 
@@ -11,7 +11,7 @@ the following shortcuts are added:
 - Voucher: alt + v
 
 
-###install
+### install
 
 1) go to the shop root
 2) clone the plugin
