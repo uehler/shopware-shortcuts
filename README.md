@@ -20,5 +20,6 @@ git clone git@github.com:uehler/shopware-shortcuts.git custom/plugins/ShopwareSh
 ```
 3) install plugin
 ```
+php bin/console sw:plugin:refresh
 php bin/console sw:plugin:install --activate ShopwareShortcuts
 ```
