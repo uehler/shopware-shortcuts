@@ -1,0 +1,27 @@
+{
+    "name": "uehler/shopware-shortcuts",
+    "description": "this is a plugin for shopware 5.2 or newer which adds new shortcuts for the backend",
+    "keywords": [
+        "shopware",
+        "plugin",
+        "shortcuts",
+        "backend"
+    ],
+    "authors": [
+        {
+            "name": "Uli Ehler",
+            "email": "mail@uli.io",
+            "homepage": "https://uli.io",
+            "role": "Developer"
+        }
+    ],
+    "license": "Beerware",
+    "type": "shopware-plugin",
+    "extra": {
+        "installer-name": "ShopwareShortcuts"
+    },
+    "require": {
+        "php": "^5.6.4||~7",
+        "composer/installers": "~1.0"
+    }
+}

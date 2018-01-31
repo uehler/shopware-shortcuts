@@ -18,6 +18,11 @@ the following shortcuts are added:
 ```
 git clone git@github.com:uehler/shopware-shortcuts.git custom/plugins/ShopwareShortcuts
 ```
+or get it via composer
+```
+composer require uehler/shopware-shortcuts
+```
+
 3) install plugin
 ```
 php bin/console sw:plugin:refresh
