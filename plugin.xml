@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
     <label>Shopware Shortcuts</label>
 
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <link>https://github.com/uehler/shopware-shortcuts</link>
     <author>Uli Ehler</author>
     <compatibility minVersion="5.2.0"/>
