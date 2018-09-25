@@ -15,15 +15,15 @@ use Shopware\Components\Plugin;
 
 class ShopwareShortcuts extends Plugin
 {
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return [
-            'Enlight_Controller_Action_PostDispatchSecure_Backend' => 'onBackendIndex'
+            'Enlight_Controller_Action_PostDispatchSecure_Backend' => 'onBackendIndex',
         ];
     }
 
 
-    public function onBackendIndex(\Enlight_Controller_ActionEventArgs $args)
+    public function onBackendIndex(\Enlight_Controller_ActionEventArgs $args): void
     {
         $view = $args->getSubject()->View();
         $view->addTemplateDir($this->getPath() . '/Resources/views/extjs');
@@ -31,39 +31,39 @@ class ShopwareShortcuts extends Plugin
     }
 
 
-    public function install(Plugin\Context\InstallContext $context)
+    public function install(Plugin\Context\InstallContext $context): void
     {
     }
 
 
-    public function update(Plugin\Context\UpdateContext $context)
+    public function update(Plugin\Context\UpdateContext $context): void
     {
         $this->clearBackendCache($context);
     }
 
 
-    public function activate(Plugin\Context\ActivateContext $context)
+    public function activate(Plugin\Context\ActivateContext $context): void
     {
         $this->clearBackendCache($context);
     }
 
 
-    public function deactivate(Plugin\Context\DeactivateContext $context)
+    public function deactivate(Plugin\Context\DeactivateContext $context): void
     {
         $this->clearBackendCache($context);
     }
 
 
-    public function uninstall(Plugin\Context\UninstallContext $context)
+    public function uninstall(Plugin\Context\UninstallContext $context): void
     {
         $this->clearBackendCache($context);
     }
 
 
-    private function clearBackendCache(Plugin\Context\InstallContext $context)
+    private function clearBackendCache(Plugin\Context\InstallContext $context): void
     {
-        $context->scheduleClearCache(array(
-            'backend'
-        ));
+        $context->scheduleClearCache([
+            'backend',
+        ]);
     }
 }
